@@ -1,0 +1,14 @@
+{
+    "appPageId": "ad167d75-7e71-10c2-08ad-89f1c05d0346",
+    "appPageName": "log",
+    "componentName": "logComponent",
+    "selectorName": "bh-log",
+    "htmlFileName": "log.template.html",
+    "tsFileName": "log.component.ts",
+    "createDate": "2020-09-30T08:12:07.160Z",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

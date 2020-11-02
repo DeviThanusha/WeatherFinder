@@ -1,0 +1,50 @@
+/*Importing default angular material css theme. */
+
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "nDefaults.scss";
+body {
+    padding: 5px;
+}
+* {
+    box-sizing: border-box;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+
+mat-grid-tile {
+  background: #b9c6d8;
+  border-radius: 4px;
+}
+
+.weathers {
+    padding: 0 5px;
+}
+
+.weather-card {
+    border: 2px solid rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+    width: 500px;
+}
+
+mat-card-title {
+    font-weight: bold;
+}
+
+.get-weather-button {
+    color: white !important;
+    background: #343438 !important;
+}
+
+  .class1 {
+      border-radius:10px;
+      flex-basis:10%;
+      height:100px;
+  }
+  .class2 {
+      border-radius:10px;
+      flex-basis:10%;
+      height:100px;
+  }
+
+  button.mat-focus-indicator.mat-raised-button.mat-button-base.mat-primary {
+    width: 10%;
+}

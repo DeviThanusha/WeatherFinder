@@ -1,0 +1,14 @@
+<div fxLayout="row wrap" style="height:100%;" fxLayoutAlign="center start" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="column wrap" fxLayoutAlign="start none" [fxShow]="true" [fxHide]="false">
+    <form #weatherForm="ngForm" style="margin-bottom:0 !important;">
+      <div fxLayout="row wrap" style="width:500px;" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false">
+        <mat-form-field style="flex-basis:75%;" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+          <input matInput [(ngModel)]="searchString" name="searchIp" placeholder="Enter city name" [required]="true" autocomplete="off" #searchIp="ngModel">
+
+        </mat-form-field><button mat-raised-button class="get-weather-button" (click)="weatherView.getWeatherModelr(searchString)" [disabled]="false" type="submit">Get weather</button>
+      </div>
+    </form>
+    <bh-weathercard (log)="updateLog($event)" #weatherView="#weatherView"></bh-weathercard>
+    <bh-log [logArray]="updateLog($event)"></bh-log>
+  </div>
+</div>

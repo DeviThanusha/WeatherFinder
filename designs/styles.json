@@ -1,0 +1,13 @@
+{
+    "classes": [
+        "weathers",
+        "weather-card",
+        "get-weather-button",
+        "class1",
+        "class2",
+        "mat-focus-indicator",
+        "mat-raised-button",
+        "mat-button-base",
+        "mat-primary"
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "routes": [
+        {
+            "component": "sampleComponent",
+            "path": "login"
+        },
+        {
+            "path": "accounts",
+            "component": "accountsComponent"
+        },
+        {
+            "path": "customer",
+            "component": "customercreationComponent"
+        },
+        {
+            "path": "''",
+            "redirectTo": "login",
+            "pathMatch": "full",
+            "default": true
+        },
+        {
+            "path": "**",
+            "component": "PageNotFoundComponent"
+        }
+    ]
+}

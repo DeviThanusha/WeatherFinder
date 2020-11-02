@@ -1,0 +1,14 @@
+{
+    "appPageId": "30f15c4c-842c-51d1-bc02-535f24b2195d",
+    "appPageName": "CustomerCreation",
+    "componentName": "customercreationComponent",
+    "selectorName": "bh-customercreation",
+    "htmlFileName": "customercreation.template.html",
+    "tsFileName": "customercreation.component.ts",
+    "createDate": "2020-10-05T12:10:15.479Z",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

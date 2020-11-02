@@ -1,0 +1,14 @@
+{
+    "appPageId": "939832ff-5d25-1bac-e458-29cfaba6cc20",
+    "appPageName": "weathersearch",
+    "componentName": "weathersearchComponent",
+    "selectorName": "bh-weathersearch",
+    "htmlFileName": "weathersearch.template.html",
+    "tsFileName": "weathersearch.component.ts",
+    "createDate": "2020-09-30T08:11:45.859Z",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

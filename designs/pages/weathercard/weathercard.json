@@ -1,0 +1,14 @@
+{
+    "appPageId": "84ff0c67-4859-0c24-9fb6-33a8866e483c",
+    "appPageName": "weathercard",
+    "componentName": "weathercardComponent",
+    "selectorName": "bh-weathercard",
+    "htmlFileName": "weathercard.template.html",
+    "tsFileName": "weathercard.component.ts",
+    "createDate": "2020-09-30T08:11:28.291Z",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

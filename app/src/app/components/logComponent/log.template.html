@@ -1,0 +1,12 @@
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="row wrap" style="padding:10px;" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false">
+    <div style="font-size:1em;font-weight:bold;">
+      <mat-slide-toggle [required]="false" [labelPosition]="&apos;before&apos;" (change)="toggleLogVisibility($event)" checked="true" [disabled]="false" [disableDragValue]="false" [disableToggleValue]="false" [disableRipple]="false"> toggle log visibility</mat-slide-toggle>
+    </div>
+  </div>
+  <div fxLayout="column wrap" style="width:500px;" fxLayoutGap="5px" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false" *ngIf="showLog">
+    <div *ngFor="let logObj of logArray; let i = index" [ngStyle]="{&apos;color&apos;: logObj.type === &apos;error&apos; ? &apos;red&apos; : &apos;green&apos;}" style="font-size:0.8em; margin-top:10px">
+      {{&apos;- &apos; + logObj.message}}
+    </div>
+  </div>
+</div>

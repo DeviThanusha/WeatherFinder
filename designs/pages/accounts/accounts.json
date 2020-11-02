@@ -1,0 +1,14 @@
+{
+    "appPageId": "149a2789-5685-5f13-5c60-bccadf5ac564",
+    "appPageName": "accounts",
+    "componentName": "accountsComponent",
+    "selectorName": "bh-accounts",
+    "htmlFileName": "accounts.template.html",
+    "tsFileName": "accounts.component.ts",
+    "createDate": "2020-10-05T11:15:38.737Z",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

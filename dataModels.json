@@ -1,0 +1,22 @@
+{
+    "0e42bd59-8259-e625-3b05-a2d4b2d714a4": {
+        "dataModelId": "0e42bd59-8259-e625-3b05-a2d4b2d714a4",
+        "name": "logobject",
+        "description": "data modal to log the API call",
+        "dataSource": "expleo-rt",
+        "fields": [
+            {
+                "name": "type",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "message",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            }
+        ]
+    }
+}

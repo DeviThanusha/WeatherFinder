@@ -1,0 +1,26 @@
+<div fxLayout="row wrap" style="height:100%;" fxLayoutAlign="center start" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="column wrap" fxLayoutAlign="start none" [fxShow]="true" [fxHide]="false">
+    <mat-card *ngIf="showCard" style="width:500px;" class="weather-card-elevation">
+      <mat-card-title align="center">{{localStorage.lastCity+ &apos; weather summary&apos; | titlecase}}</mat-card-title>
+
+      <mat-card-content>
+        <div fxLayout="row wrap" fxLayoutGap="5px" fxLayoutAlign="space-evenly stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column " class="weathers" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false" *ngFor="let w of weatherdata?.weather; let i = index" datasource="weatherdata" option="w"><img [src]="&apos;http://openweathermap.org/img/w/&apos; + w.icon + &apos;.png&apos;">
+            <p>
+              {{w.description}}
+            </p>
+          </div>
+        </div>
+      </mat-card-content>
+
+      <mat-card-content align="center">
+        <mat-grid-list rowHeight="50px" cols="2" gutterSize="5px">
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" *ngFor="let m of weatherdata?.main | keyvalue">
+            <mat-grid-tile>{{m.key | titlecase}}</mat-grid-tile>
+            <mat-grid-tile>{{m.value + (m.key.includes(&apos;temp&apos;)?&apos;&#xB0;C&apos;: &quot; &quot;)}}</mat-grid-tile>
+          </div>
+        </mat-grid-list>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
